@@ -78,3 +78,13 @@ Snapshots:   0 total
 Time:        1.201 s, estimated 3 s
 Ran all test suites.
 ```
+
+## Siguientes Pasos
+
+- [Instalar Preact](docs/install-preact.md)
+
+  **Preact** es una libreria homomorfa que sustituye a **React**. La idea detrás 
+  de **Preact** es ofrecer una libreria con la misma funcionalidad e interfaz que
+  **React** pero de un tamaño sensiblemete menor (3.5Kb)
+
+- [Instalar Webpack](docs/install-webpack.md)
