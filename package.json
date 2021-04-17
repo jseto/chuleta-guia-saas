@@ -4,7 +4,10 @@
   "description": "Tutorial para crear un SaaS de 0 a 100",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "dev": "webpack serve",
+    "build": "webpack --mode=production",
+    "test": "jest",
+    "debug": "node --inspect-brk node_modules/.bin/jest --runInBand --coverage false"
   },
   "repository": {
     "type": "git",
@@ -17,7 +20,8 @@
     "Firebase",
     "React",
     "Preact",
-    "Plugin"
+    "Plugin",
+    "Testing Library"
   ],
   "author": "Josep",
   "license": "MIT",
@@ -27,11 +31,17 @@
   "homepage": "https://github.com/jseto/guia-saas#readme",
   "dependencies": {},
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.11.5",
+    "@testing-library/preact": "^2.0.0",
     "@types/jest": "^26.0.9",
+    "html-webpack-plugin": "^4.5.0",
     "jest": "^26.2.2",
+    "preact": "^10.5.5",
     "ts-jest": "^26.1.4",
     "ts-loader": "^8.0.2",
     "typescript": "^3.9.7",
-    "webpack": "^4.44.1"
+    "webpack": "^5.3.0",
+    "webpack-cli": "^4.1.0",
+    "webpack-dev-server": "^3.11.0"
   }
 }
